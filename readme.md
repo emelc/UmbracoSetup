@@ -1,5 +1,5 @@
 # Jaywing Umbraco Setup
-> This is a guide to help setup Umbraco in the right way.
+> Simple documentation to setting up Umbraco websites. 
 
 ## Contents
 
@@ -14,4 +14,8 @@
 9. [404](404.md)
 10. [Plugins](plugins.md)
 
-Author: `Gareth Wright`
+# Author
+[Gareth Wright](https://github.com/garpunkal)
+
+# License
+Licensed under the MIT License
