@@ -1,4 +1,4 @@
-# Basic Umbraco Setup
+# Jaywing Umbraco Setup
 >> This is a guide to help setup Umbraco in the right way, using UmbracoClient as an example. Please replace names etc where required. 
 
 
