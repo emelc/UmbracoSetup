@@ -1,4 +1,4 @@
-# Azure Blob storage:
+# Azure Blob Storage
 
 - Setup Blob storage in Azure
 - `Install-Package UmbracoFileSystemProviders.Azure -Pre`
