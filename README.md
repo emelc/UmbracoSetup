@@ -1,5 +1,5 @@
 # Jaywing Umbraco Setup
->> This is a guide to help setup Umbraco in the right way, using UmbracoClient as an example. Please replace names etc where required. 
+> This is a guide to help setup Umbraco in the right way, using UmbracoClient as an example. Please replace names, etc where required. 
 
 
 ### 1. Create git repository 
@@ -13,10 +13,10 @@ Select the following types: **VisualStudio** and **Umbraco**.
 Name: `UmbracoClient`
 
 ### 4. Add Project
-.NET Framework 4.5.2
-ASP .NET Web Application (.NET Framework)
-Template: Empty
-Name: `UmbracoClient.Web`
+- .NET Framework 4.5.2
+- ASP .NET Web Application (.NET Framework)
+- Template: Empty
+- Name: `UmbracoClient.Web`
   
 ### 5. Change assembly name and default namespace. 
 `Jaywing.UmbracoClient.Web`
@@ -122,7 +122,7 @@ Update to point to your mail server.
 - Within Options, set recovery model set to Simple.
 
 ### 12. Create SQL user login
-for a local SQL database, you can setup using simple credentials. Upon deployment it's recommended you don't use these settings. 
+For a local SQL database, you can setup using simple credentials, although upon deployment it's recommended you don't use these settings. 
 
 - username: `UmbracoClient`
 - password: `UmbracoClient`
@@ -166,7 +166,7 @@ Address: *https://umbracoclient-local.jywng.co*
 Step 1:
 - Name: Gareth Wright
 - Email: ***email address goes here***
-- Password: use a complex password, as this is the main administrator for the CMS. Store this in Keepass.
+- Password: use a complex password, as this is the main administrator for the CMS. Please make sure you store this password into the Jaywing Development KeePass database.
 - ***Uncheck*** newsletter signup.
 - **IMPORTANT, DO NOT CLICK INSTALL, CLICK CUSTOMISE.**
 
@@ -229,7 +229,7 @@ Change administrator's Language to be `English (United Kingdom)`.
     </configuration> 
 ~~~
 
-- update `~/config/FileSystemProviders.config`
+- update `~/config/FileSystemProviders.config` and replace XXXXXXX with the appropriate details from Azure. 
 ~~~xml
     <?xml version="1.0"?>
     <FileSystemProviders>
@@ -400,7 +400,7 @@ Only use `DittoView` and `DittoController` to map to viewmodels.
 Setup a CDN in Azure. 
 Ensure you have setup media to use blob storage.
 Install the ImageProcessor BlobCache Plugin: `Install-Package ImageProcessor.Web.Plugins.AzureBlobCache`
-Update the following file: `~/config/imageprocessor/cache.config`
+Update the following file: `~/config/imageprocessor/cache.config`  and replace XXXXXXX with the appropriate details from Azure. 
 
 ~~~xml
 <caching currentCache="AzureBlobCache">
@@ -408,12 +408,12 @@ Update the following file: `~/config/imageprocessor/cache.config`
     <cache name="AzureBlobCache" type="ImageProcessor.Web.Plugins.AzureBlobCache.AzureBlobCache, ImageProcessor.Web.Plugins.AzureBlobCache" maxDays="365"
            browserMaxDays="7" folderDepth="6" >
       <settings>
-        <setting key="CachedStorageAccount" value="DefaultEndpointsProtocol=https;AccountName=XXXXXX;AccountKey=XXXXXX;EndpointSuffix=core.windows.net" />
+        <setting key="CachedStorageAccount" value="DefaultEndpointsProtocol=https;AccountName=XXXXXXX;AccountKey=XXXXXXX;EndpointSuffix=core.windows.net" />
         <setting key="CachedBlobContainer" value="media-cache-dev" />
         <setting key="UseCachedContainerInUrl" value="true" />
-        <setting key="CachedCDNRoot" value="https://XXXXXX.azureedge.net/" />
+        <setting key="CachedCDNRoot" value="https://XXXXXXX.azureedge.net/" />
         <setting key="CachedCDNTimeout" value="1000" />
-        <setting key="SourceStorageAccount" value="DefaultEndpointsProtocol=https;AccountName=XXXXXX;AccountKey=XXXXXX;EndpointSuffix=core.windows.net" />
+        <setting key="SourceStorageAccount" value="DefaultEndpointsProtocol=https;AccountName=XXXXXXX;AccountKey=XXXXXXX;EndpointSuffix=core.windows.net" />
         <setting key="SourceBlobContainer" value="media-dev" />
         <setting key="StreamCachedImage" value="false" />
       </settings>
@@ -422,7 +422,7 @@ Update the following file: `~/config/imageprocessor/cache.config`
 </caching>
 ~~~
 
-Update the following file: `~/config/imageprocessor/security.config` 
+Update the following file: `~/config/imageprocessor/security.config`  and replace XXXXXXX with the appropriate details from Azure. 
 
 ~~~xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -433,7 +433,7 @@ Update the following file: `~/config/imageprocessor/security.config`
         <setting key="Container" value="media-dev" />
         <setting key="MaxBytes" value="31457280" />
         <setting key="Timeout" value="30000" />
-        <setting key="Host" value="https://XXXXXX.blob.core.windows.net/" />
+        <setting key="Host" value="https://XXXXXXX.blob.core.windows.net/" />
       </settings>
     </service>
     <service name="LocalFileImageService" type="ImageProcessor.Web.Services.LocalFileImageService, ImageProcessor.Web" />
@@ -445,7 +445,7 @@ Update the following file: `~/config/imageprocessor/security.config`
         <setting key="Protocol" value="https" />
       </settings>
       <whitelist>
-        <add url="https://XXXXXX.azureedge.net"/>
+        <add url="https://XXXXXXX.azureedge.net"/>
       </whitelist>
     </service>
   </services>
