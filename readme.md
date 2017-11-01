@@ -6,7 +6,7 @@
 1. [Basic Umbraco Setup](basicumbracosetup.md)
 2. [Azure Blob Storage](azureblobstorage.md)
 3. [Azure CDN](azurecdn.md)
-4. [uSync](azurecdn.md)
+4. [uSync](usync.md)
 5. [Startup Dashboards](startupdashboards.md)
 6. [Login Screen](loginscreen.md)
 7. [Ditto](ditto.md)
