@@ -20,20 +20,20 @@ Name: `UmbracoClient`
 `Jaywing.UmbracoClient.Web`
 
 ### 6. Install nuget packages
-- `Install-Package UmbracoCms`
-- `Install-Package UmbracoForms` *(if applicable)*
+- `Install-Package UmbracoCms` [nuget](https://www.nuget.org/packages/UmbracoCms/)
+- `Install-Package UmbracoForms` [nuget](https://www.nuget.org/packages/UmbracoForms/)
     
 If you have seperate projects that require Umbraco objects
-- `Install-Package UmbracoCms.Core`
-- `Install-Package UmbracoForms.Core`
+- `Install-Package UmbracoCms.Core` [nuget](https://www.nuget.org/packages/UmbracoCms.Core/)
+- `Install-Package UmbracoForms.Core` [nuget](https://www.nuget.org/packages/UmbracoForms.Core/)
 
 ### 7. Upgrade Microsoft.CodeAnalysis.Analyzers to version v1.1.0
 This removes a warning message when building the website.
 
 ### 8. Install Autofac:
-- `Install-Package Autofac`
-- `Install-Package Autofac.WebApi2`
-- `Install-Package Autofac.Mvc5`
+- `Install-Package Autofac` [nuget](https://www.nuget.org/packages/Autofac/)
+- `Install-Package Autofac.WebApi2` [nuget](https://www.nuget.org/packages/Autofac.WebApi2/)
+- `Install-Package Autofac.Mvc5` [nuget](https://www.nuget.org/packages/Autofac.Mvc5/)
 
 ### 9. Add Class UmbracoStart.cs
 Add UmbracoStartup.cs into the root and use the following syntax:
