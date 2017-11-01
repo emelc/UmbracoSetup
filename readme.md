@@ -18,4 +18,4 @@
 [Gareth Wright](https://github.com/garpunkal)
 
 # License
-Licensed under the MIT License
+Licensed under the [MIT License](LICENSE.md)
