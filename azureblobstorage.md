@@ -1,7 +1,7 @@
 # Azure Blob Storage
 
 - Setup Blob storage in Azure
-- `Install-Package UmbracoFileSystemProviders.Azure -Pre`
+- `Install-Package UmbracoFileSystemProviders.Azure -Pre` [nuget](https://www.nuget.org/packages/UmbracoFileSystemProviders.Azure/)
 - Include `~/media/web.config` to source control
 - Update web.config:
 
