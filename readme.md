@@ -3,7 +3,7 @@
 
 ## Contents
 
-1. [Basic Umbraco Setup](baseumbracosetup.md)
+1. [Basic Umbraco Setup](basicumbracosetup.md)
 2. [Azure Blob Storage](azureblobstorage.md)
 3. [Azure CDN](azurecdn.md)
 4. [uSync](azurecdn.md)
