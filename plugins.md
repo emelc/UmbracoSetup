@@ -1,7 +1,8 @@
 # Plugins
 
 ### CmsEnvironmentIndicator:
-`Install-Package Our.Umbraco.CmsEnvironmentIndicator`
+`Install-Package Our.Umbraco.CmsEnvironmentIndicator` [nuget](https://www.nuget.org/packages/Our.Umbraco.CmsEnvironmentIndicator/)
+
 Update the javascript file: `~/App_Plugins/CmsEnvironmentIndicator/js/cms-environment-indicator.js` to be more specific:
 ~~~js
   var config = [
