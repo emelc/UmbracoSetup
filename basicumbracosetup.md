@@ -1,3 +1,5 @@
+# Basic Umbraco Setup
+
 ### 1. Create git repository 
 Try and use lowercase alphanumerics and dashes only.
 
