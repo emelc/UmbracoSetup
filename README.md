@@ -15,7 +15,7 @@
 10. [Plugins](plugins.md)
 
 # Author
-[Gareth Wright](https://github.com/garpunkal)
+[Gareth Wright](https://github.com/garpunkal) for [Jaywing](https://jaywing.com)
 
 # License
 Licensed under the [MIT License](LICENSE.md)
