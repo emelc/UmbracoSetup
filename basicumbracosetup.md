@@ -1,7 +1,3 @@
-# Jaywing Umbraco Setup
-> This is a guide to help setup Umbraco in the right way, using UmbracoClient as an example. Please replace names, etc where required. 
-
-
 ### 1. Create git repository 
 Try and use lowercase alphanumerics and dashes only.
 
