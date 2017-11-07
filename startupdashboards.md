@@ -97,7 +97,7 @@ Update the UmbracoStartup.cs to include the custom route.
 #endif
 
             RouteTable.Routes.MapRoute(
-                name: "Welcome",
+                name: "Jaywing",
                 url: GlobalSettings.UmbracoMvcArea + "/backoffice/jaywing/{action}/{id}",                
                 defaults: new
                 {
