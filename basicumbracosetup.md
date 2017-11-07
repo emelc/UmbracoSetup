@@ -58,8 +58,7 @@ public class UmbracoStartup : IApplicationEventHandler
     {
 #if DEBUG
         ServicePointManager.ServerCertificateValidationCallback += (o, c, ch, er) => true;
-#endif
-        RouteTable.Routes.MapMvcAttributeRoutes();
+#endif       
         BundleConfig.RegisterBundles(BundleTable.Bundles);
     }
 
@@ -94,8 +93,7 @@ public class UmbracoStartup : IApplicationEventHandler
 ### 10. Update web.config: 
 
 ##### AppSettings:
-- umbracoReservedPaths: append to the value: `,~/Jaywing/,~/.well-known/,~/assets/`
-    - `~/Jaywing/` is for dashboards, replace Jaywing with the client name. 
+- umbracoReservedPaths: append to the value: `~/.well-known/,~/assets/`   
     - `~/.well-known/` is for Let's Encrypt Azure Extension. 
     - `~/assets/` is for CMS backgrounds.
 - umbracoUseSSL: **true**

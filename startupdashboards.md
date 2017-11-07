@@ -34,23 +34,15 @@ Remove the tag "Get Started".
   </section>
   ~~~
 ### Custom Startup Dashboard:
-- Ensure you have updated the web.config to include `~/Jaywing/` as a umbracoReservedPaths.
-- Ensure you have attribute routing ***RouteTable.Routes.MapMvcAttributeRoutes();*** in your `UmbracoStartup.cs`. 
 
-Create a new controller `~/Controllers/JaywingController.cs`:
+Create a new controller `~/Controllers/JaywingController.cs`, this needs to use the base class of UmbracoAuthorizedController for security:
 
 ~~~csharp
-    [RoutePrefix("jaywing")]
-    public class JaywingController : SurfaceController
+    public class JaywingController : UmbracoAuthorizedController
     {
-        public JaywingController()
-        {
-        }
-
-        [Route("welcome")]
         public ActionResult Welcome()
         {
-            return PartialView("Welcome"); 
+            return PartialView("~/Views/Partials/Jaywing/Welcome.cshtml");
         }
     }
 ~~~
@@ -90,7 +82,30 @@ Update `~/config/dashboards.config` to include the new view:
       <area>content</area>
     </areas>
     <tab caption="Welcome">
-      <control>/jaywing/welcome</control>
+      <control>/umbraco/backoffice/jaywing/welcome</control>
     </tab>
   </section>
+~~~
+
+Update the UmbracoStartup.cs to include the custom route. 
+
+~~~csharp
+ public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
+        {
+#if DEBUG
+            ServicePointManager.ServerCertificateValidationCallback += (o, c, ch, er) => true;
+#endif
+
+            RouteTable.Routes.MapRoute(
+                name: "Welcome",
+                url: GlobalSettings.UmbracoMvcArea + "/backoffice/jaywing/{action}/{id}",                
+                defaults: new
+                {
+                    controller = "Jaywing",
+                    action = "Welcome",
+                    id = UrlParameter.Optional
+                });
+
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
 ~~~
