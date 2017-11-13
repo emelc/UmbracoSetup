@@ -13,6 +13,8 @@
 8. [Handlers](handlers.md)
 9. [404](404.md)
 10. [Plugins](plugins.md)
+11. [Logging](logging.md)
+12. [TinyMCE](tinymce.md)
 
 # Author
 [Gareth Wright](https://github.com/garpunkal) for [Jaywing](https://jaywing.com)
