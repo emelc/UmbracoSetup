@@ -20,7 +20,7 @@ Add the following command in the Commands element:
 Add the following configs in the customConfig element. 
 
 ~~~xml
- <config key="paste_as_text">true</config>
+    <config key="paste_as_text">true</config>
     <config key="paste_text_sticky">true</config>
     <config key="paste_text_sticky_default">true</config>
 ~~~
