@@ -47,7 +47,7 @@ Create a new controller `~/Controllers/JaywingController.cs`, this needs to use 
     }
 ~~~
 
-Create a new view `~/Views/Jaywing/Welcome.cshtml`:
+Create a new view `~/Views/Partials/Jaywing/Welcome.cshtml`:
 ~~~html
 <style type="text/css">
     .welcome-action-link {
