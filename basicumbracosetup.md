@@ -97,7 +97,7 @@ public class UmbracoStartup : IApplicationEventHandler
     - `~/.well-known/` is for Let's Encrypt Azure Extension. 
     - `~/assets/` is for CMS backgrounds.
 - umbracoUseSSL: **true**
-- umbracoDefaultUILanguage: **en**
+- umbracoDefaultUILanguage: **en-GB**
 - Umbraco.ModelsBuilder.Enable: **false**
 
 ##### Update mail settings:
