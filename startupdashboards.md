@@ -49,25 +49,14 @@ Create a new controller `~/Controllers/JaywingController.cs`, this needs to use 
 
 Create a new view `~/Views/Partials/Jaywing/Welcome.cshtml`:
 ~~~html
-<style type="text/css">
-    .welcome-action-link {
-        color: #1DC5C5;
-    }
-
-    .welcome-heading {
-        border-bottom: 1px solid #f8f8f8;
-        margin-bottom: 30px;
-    }
-</style>
-<div class="umb-dashboard-grid" ng-controller="Umbraco.Dashboard.StartUpDynamicContentController as vm">
+<div ng-controller="Umbraco.Dashboard.StartUpDynamicContentController as vm">
     <umb-load-indicator ng-if="vm.loading"></umb-load-indicator>
-    <div class="span12 welcome-heading">
-        <h2>Welcome to the CMS</h2>
-    </div>
-    <div class="span12">
-        <h3>Useful resources</h3>
+    <h3 class="bold">Welcome</h3>
+    <div class="umb-healthcheck-help-text faded">
+        <p>Here are some useful resources:</p>
         <ul class="nav">
             <li><a href="https://goo.gl/RGLHYi" target="_blank" class="welcome-action-link"><i class="icon-out"></i> <span>Umbraco Content Editor Manual</span></a></li>
+            <li><a href="https://umbraco.tv" target="_blank" class="welcome-action-link"><i class="icon-out"></i> <span>Umbraco.TV</span></a></li>
         </ul>
     </div>
 </div>
