@@ -351,3 +351,16 @@ This should work with uSync, allowing you to import the dictionary items require
 </DictionaryItem>
 ~~~
 
+
+### CMS Umbraco Forms setup
+---
+
+Add new question on your form and select the following icon:
+![Google Recaptcha Backoffice](https://github.com/Jaywing/UmbracoSetup/blob/master/images/recaptcha-icon.PNG)
+
+Setup the Recaptcha as follows. Ensuring you `DO NOT` check `Field is mandatory`.
+![Google Recaptcha Backoffice](https://github.com/Jaywing/UmbracoSetup/blob/master/images/recaptcha-modal.PNG)
+
+The question should be shown in your form as follows: 
+![Google Recaptcha Backoffice](https://github.com/Jaywing/UmbracoSetup/blob/master/images/recaptcha-backoffice.PNG)
+
