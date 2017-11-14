@@ -1,6 +1,6 @@
 # Handlers
 
-### Robots.txt: 
+## Robots.txt: 
 The following will update the sitemap URL dynamically based on your domain. 
 ~~~csharp
 namespace Jaywing.Handlers 
@@ -42,7 +42,7 @@ Add the following line in your web.config under the `<system.webServer>` section
   <add name="RobotsTxt" verb="*" path="robots.txt" type="Jaywing.Handlers.RobotsTxt" />
 ~~~
 
-### Sitemap.xml:
+## Sitemap.xml:
 The following handler will traverse your website and produce an XML sitemap. 
 ~~~csharp
 namespace Jaywing.Handlers 

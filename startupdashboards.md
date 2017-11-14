@@ -1,6 +1,6 @@
 # Startup Dashboards
 
-### Remove Startup dashboard:
+## Remove Startup dashboard:
 Open the following config file `~/config/dashboard.config`
 
 ~~~xml
@@ -33,7 +33,7 @@ Remove the tag "Get Started".
     </areas>
   </section>
   ~~~
-### Custom Startup Dashboard:
+## Custom Startup Dashboard:
 
 Create a new controller `~/Controllers/JaywingController.cs`, this needs to use the base class of UmbracoAuthorizedController for security:
 
@@ -65,36 +65,36 @@ Create a new view `~/Views/Partials/Jaywing/Welcome.cshtml`:
 Update `~/config/dashboards.config` to include the new view:
 
 ~~~xml
- <section alias="JaywingSection">
-    <areas>
-      <area>default</area>
-      <area>content</area>
-    </areas>
-    <tab caption="Welcome">
-      <control>/umbraco/backoffice/jaywing/welcome</control>
-    </tab>
-  </section>
+<section alias="JaywingSection">
+  <areas>
+    <area>default</area>
+    <area>content</area>
+  </areas>
+  <tab caption="Welcome">
+    <control>/umbraco/backoffice/jaywing/welcome</control>
+  </tab>
+</section>
 ~~~
 
 Update the UmbracoStartup.cs to include the custom route. 
 
 ~~~csharp
- public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
-        {
+public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
+{
 #if DEBUG
-            ServicePointManager.ServerCertificateValidationCallback += (o, c, ch, er) => true;
+    ServicePointManager.ServerCertificateValidationCallback += (o, c, ch, er) => true;
 #endif
 
-            RouteTable.Routes.MapRoute(
-                name: "Jaywing",
-                url: GlobalSettings.UmbracoMvcArea + "/backoffice/jaywing/{action}/{id}",                
-                defaults: new
-                {
-                    controller = "Jaywing",
-                    action = "Welcome",
-                    id = UrlParameter.Optional
-                });
+    RouteTable.Routes.MapRoute(
+        name: "Jaywing",
+        url: GlobalSettings.UmbracoMvcArea + "/backoffice/jaywing/{action}/{id}",                
+        defaults: new
+        {
+            controller = "Jaywing",
+            action = "Welcome",
+            id = UrlParameter.Optional
+        });
 
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
-        }
+    BundleConfig.RegisterBundles(BundleTable.Bundles);
+}
 ~~~

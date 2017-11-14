@@ -1,6 +1,6 @@
 # Logging
 
-### Log4Net: 
+## Log4Net: 
 
 Update the following file: `~/config/log4net.config`. 
 

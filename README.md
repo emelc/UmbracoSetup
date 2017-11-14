@@ -15,6 +15,7 @@
 10. [Plugins](plugins.md)
 11. [Logging](logging.md)
 12. [TinyMCE](tinymce.md)
+13. [Umbraco Forms](umbracoforms.md)
 
 # Author
 [Gareth Wright](https://github.com/garpunkal) for [Jaywing](https://jaywing.com)

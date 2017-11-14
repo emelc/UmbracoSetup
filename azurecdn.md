@@ -1,4 +1,5 @@
 # Azure CDN
+
 Setup a CDN in Azure. 
 Ensure you have setup media to use blob storage.
 Install the ImageProcessor BlobCache Plugin: `Install-Package ImageProcessor.Web.Plugins.AzureBlobCache` [nuget](https://www.nuget.org/packages/ImageProcessor.Web.Plugins.AzureBlobCache/)
