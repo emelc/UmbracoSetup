@@ -17,8 +17,5 @@
 12. [TinyMCE](tinymce.md)
 13. [Umbraco Forms](umbracoforms.md)
 
-# Author
-[Gareth Wright](https://github.com/garpunkal) for [Jaywing](https://jaywing.com)
-
 # License
 Licensed under the [MIT License](LICENSE.md)
