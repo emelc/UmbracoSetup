@@ -12,3 +12,4 @@ Update the javascript file: `~/App_Plugins/CmsEnvironmentIndicator/js/cms-enviro
         { pattern: "^.*$", color: "991d1d" } //red
   ];
 ~~~
+ 

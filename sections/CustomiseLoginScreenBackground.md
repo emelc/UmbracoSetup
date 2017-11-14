@@ -7,4 +7,4 @@ Update the following field in this file: `~/config/umbracoSettings.config`
 
 ~~~xml
    <loginBackgroundImage>/assets/cms-background.jpg</loginBackgroundImage>
-~~~
+~~~ 

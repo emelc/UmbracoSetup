@@ -15,4 +15,4 @@ Update the appropriate language file: `~/config/lang/en-GB.user.xml`
     <key alias="greeting6">Welcome to the CMS</key>
   </area>
 </language>
-~~~
+~~~ 

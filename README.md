@@ -21,17 +21,17 @@
 - [uSync](sections/usync.md)
 
 ### Customisation
-- [Remove Startup Dashboard](sections/RemoveStartupDashboard.md)
-- [Custom Startup Dashboard](sections/CustomStartupDashboard.md)
-- [Customise Login Screen Background Image](sections/CustomiseLoginScreenBackground.md)
-- [Customise Login Screen Welcome Text](sections/CustomiseLoginScreenWelcomeText.md)
+- [Remove Startup Dashboard](sections/removestartupdashboard.md)
+- [Custom Startup Dashboard](sections/customstartupdashboard.md)
+- [Customise Login Screen Background Image](sections/customiseloginscreenbackground.md)
+- [Customise Login Screen Welcome Text](sections/customiseloginscreenwelcometext.md)
 - [TinyMCE Only Paste As Text](sections/tinymce-pasteastext.md)
 
 ### UmbracoForms
 - [Recaptcha 2](sections/recaptcha2.md)
 
 ### Plugins
-- [Cms Environment Indicator](sections/CmsEnvironmentIndicator.md)
+- [Cms Environment Indicator](sections/cmsenvironmentindicator.md)
 
 
 # License
