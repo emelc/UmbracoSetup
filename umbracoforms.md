@@ -3,7 +3,7 @@
 ## Google Recaptcha 2
 
 
-![Recaptcha Not A Robot](images/recaptcha-not-a-robot.png)
+![Recaptcha Not A Robot](https://github.com/Jaywing/UmbracoSetup/blob/master/images/recaptcha-not-a-robot.PNG)
 
 Firstly you need to setup a new site on: [Google Recaptcha](https://www.google.com/recaptcha).
 
