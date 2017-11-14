@@ -31,7 +31,7 @@
 - [Recaptcha 2](sections/recaptcha2.md)
 
 ### Plugins
-- [Cms Environment Indicator](sections/cmsenvironmentindicator.md)
+- [Cms Environment Indicator](sections/CmsEnvironmentIndicator.md)
 
 
 # License
