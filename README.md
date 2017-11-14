@@ -1,4 +1,4 @@
-![Jaywing](https://github.com/Jaywing/UmbracoSetup/blob/master/images/jaywing.png)
+![Jaywing](https://github.com/Jaywing/UmbracoSetup/blob/master/images/jaywing-logo.png)
 
 # Umbraco
 > Simple documentation to setting up Umbraco websites. 
