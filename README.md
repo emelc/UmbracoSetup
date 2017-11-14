@@ -6,7 +6,6 @@
 ## Contents
 
 ### Setup
----
 - [Basic Umbraco Setup](sections/basicumbracosetup.md)
 - [Ditto](sections/ditto.md)
 - [404](sections/404.md)
@@ -14,26 +13,21 @@
 - [Handlers](sections/handlers.md) 
 
 ### Azure
----
 - [Blob Storage](sections/azureblobstorage.md)
 - [Content Delivery Network](sections/azurecdn.md)
 
-### Sync
----
+### Deployment
 - [uSync](sections/usync.md)
 
 ### Customisation
----
 - [Startup Dashboards](sections/startupdashboards.md)
 - [Login Screen](sections/loginscreen.md)
 - [TinyMCE - Paste As Text](sections/tinymce-pasteastext.md)
 
 ### UmbracoForms
----
 - [Recaptcha 2](sections/recaptcha2.md)
 
 ### Plugins
----
 - [CmsEnvironmentIndicator](sections/cmsenvironmentindicator.md)
 
 
