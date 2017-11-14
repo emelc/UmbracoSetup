@@ -355,12 +355,15 @@ This should work with uSync, allowing you to import the dictionary items require
 ### CMS Umbraco Forms setup
 ---
 
-Add new question on your form and select the following icon:
-![Google Recaptcha Backoffice](https://github.com/Jaywing/UmbracoSetup/blob/master/images/recaptcha-icon.PNG)
+1. Add new question on your form and select the following icon:
 
-Setup the Recaptcha as follows. Ensuring you `DO NOT` check `Field is mandatory`.
+![Google Recaptcha Backoffice](https://github.com/Jaywing/UmbracoSetup/blob/master/images/recaptcha-backoffice-icon.PNG)
+
+2. Setup the Recaptcha as follows. Ensuring you `DO NOT` check `Field is mandatory`:
+
 ![Google Recaptcha Backoffice](https://github.com/Jaywing/UmbracoSetup/blob/master/images/recaptcha-modal.PNG)
 
-The question should be shown in your form as follows: 
+3. The question should be shown in your form as follows: 
+
 ![Google Recaptcha Backoffice](https://github.com/Jaywing/UmbracoSetup/blob/master/images/recaptcha-backoffice.PNG)
 
