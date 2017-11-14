@@ -1,18 +1,18 @@
 # Custom Startup Dashboard
 
-Create a new controller `~/Controllers/JaywingController.cs`, this needs to use the base class of UmbracoAuthorizedController for security:
+Create a new controller `~/Controllers/CMSController.cs`, this needs to use the base class of UmbracoAuthorizedController for security:
 
 ~~~csharp
-    public class JaywingController : UmbracoAuthorizedController
+    public class CMSController : UmbracoAuthorizedController
     {
         public ActionResult Welcome()
         {
-            return PartialView("~/Views/Partials/Jaywing/Welcome.cshtml");
+            return PartialView("~/Views/Partials/CMS/Welcome.cshtml");
         }
     }
 ~~~
 
-Create a new view `~/Views/Partials/Jaywing/Welcome.cshtml`:
+Create a new view `~/Views/Partials/CMS/Welcome.cshtml`:
 ~~~html
 <div ng-controller="Umbraco.Dashboard.StartUpDynamicContentController as vm">
     <umb-load-indicator ng-if="vm.loading"></umb-load-indicator>
@@ -30,13 +30,13 @@ Create a new view `~/Views/Partials/Jaywing/Welcome.cshtml`:
 Update `~/config/dashboards.config` to include the new view:
 
 ~~~xml
-<section alias="JaywingSection">
+<section alias="CMSSection">
   <areas>
     <area>default</area>
     <area>content</area>
   </areas>
   <tab caption="Welcome">
-    <control>/umbraco/backoffice/jaywing/welcome</control>
+    <control>/umbraco/backoffice/cms/welcome</control>
   </tab>
 </section>
 ~~~
@@ -51,11 +51,11 @@ public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, Appl
 #endif
 
     RouteTable.Routes.MapRoute(
-        name: "Jaywing",
-        url: GlobalSettings.UmbracoMvcArea + "/backoffice/jaywing/{action}/{id}",                
+        name: "CMS",
+        url: GlobalSettings.UmbracoMvcArea + "/backoffice/cms/{action}/{id}",                
         defaults: new
         {
-            controller = "Jaywing",
+            controller = "CMS",
             action = "Welcome",
             id = UrlParameter.Optional
         });
