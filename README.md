@@ -10,7 +10,8 @@
 - [Ditto](sections/ditto.md)
 - [404](sections/404.md)
 - [Logging](sections/logging.md)
-- [Handlers](sections/handlers.md) 
+- [Sitemap.xml](sections/sitemapxml.md) 
+- [Robots.txt](sections/robotstxt.md) 
 
 ### Azure
 - [Blob Storage](sections/azureblobstorage.md)
@@ -20,16 +21,16 @@
 - [uSync](sections/usync.md)
 
 ### Customisation
-- [Startup Dashboards](sections/startupdashboards.md)
-- [Login Screen](sections/loginscreen.md)
-- [TinyMCE - Paste As Text](sections/tinymce-pasteastext.md)
+- [Remove Startup Dashboard](sections/RemoveStartupDashboard.md)
+- [Custom Startup Dashboard](sections/CustomStartupDashboard.md)
+- [Login Screen Tweaks](sections/loginscreen.md)
+- [TinyMCE Only Paste As Text](sections/tinymce-pasteastext.md)
 
 ### UmbracoForms
 - [Recaptcha 2](sections/recaptcha2.md)
 
 ### Plugins
-- [CmsEnvironmentIndicator](sections/cmsenvironmentindicator.md)
-
+- [Cms Environment Indicator](sections/cmsenvironmentindicator.md)
 
 
 # License
