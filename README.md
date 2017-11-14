@@ -23,7 +23,8 @@
 ### Customisation
 - [Remove Startup Dashboard](sections/RemoveStartupDashboard.md)
 - [Custom Startup Dashboard](sections/CustomStartupDashboard.md)
-- [Login Screen Tweaks](sections/loginscreen.md)
+- [Customise Login Screen Background Image](sections/CustomiseLoginScreenBackground.md)
+- [Customise Login Screen Welcome Text](sections/CustomiseLoginScreenWelcomeText.md)
 - [TinyMCE Only Paste As Text](sections/tinymce-pasteastext.md)
 
 ### UmbracoForms
