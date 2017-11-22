@@ -58,8 +58,8 @@ public class UmbracoStartup : IApplicationEventHandler
     {
 #if DEBUG
         ServicePointManager.ServerCertificateValidationCallback += (o, c, ch, er) => true;
-#endif       
-        BundleConfig.RegisterBundles(BundleTable.Bundles);
+#endif      
+       
     }
 
     private IContainer RegisterDependencies(ApplicationContext appContext)
