@@ -59,8 +59,7 @@ public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, Appl
             action = "Welcome",
             id = UrlParameter.Optional
         });
-
-    BundleConfig.RegisterBundles(BundleTable.Bundles);
+  
 }
 ~~~
 
