@@ -58,8 +58,7 @@ public class UmbracoStartup : IApplicationEventHandler
     {
 #if DEBUG
         ServicePointManager.ServerCertificateValidationCallback += (o, c, ch, er) => true;
-#endif      
-        RouteConfig.RegisterRoutes(RouteTable.Routes);
+#endif   
     }
 
     private IContainer RegisterDependencies(ApplicationContext appContext)
