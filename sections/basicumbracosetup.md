@@ -66,21 +66,22 @@ public class UmbracoStartup : IApplicationEventHandler
         var builder = new ContainerBuilder();
         Assembly applicationWebAssembly = GetType().Assembly;
 
-        builder.RegisterApiControllers(typeof(UmbracoApplication).Assembly);
-        builder.RegisterApiControllers(typeof(FormTreeController).Assembly);
-        
-        builder.RegisterApiControllers(applicationWebAssembly).PropertiesAutowired();
         builder.RegisterControllers(applicationWebAssembly);
+
+        builder.RegisterApiControllers(typeof(UmbracoApplication).Assembly);
+        builder.RegisterApiControllers(typeof(FormTreeController).Assembly);        
+        builder.RegisterApiControllers(applicationWebAssembly).PropertiesAutowired();
+        
         builder.RegisterModule<AutofacWebTypesModule>();
 
-        builder.Register(c => UmbracoContext.Current).As<UmbracoContext>().InstancePerRequest();
         builder.Register(c => appContext).As<ApplicationContext>().SingleInstance();
-        builder.Register(c => new UmbracoHelper(UmbracoContext.Current)).As<UmbracoHelper>();
-        builder.Register(c => appContext.Services.TextService).As<ILocalizedTextService>();
-        builder.Register(c => appContext.Services.MediaService).As<IMediaService>();
-        builder.Register(c => appContext.Services.ContentService).As<IContentService>();
-        builder.Register(c => appContext.Services.UserService).As<IUserService>();
-        builder.Register(c => appContext.Services.SectionService).As<ISectionService>();          
+        builder.Register(c => UmbracoContext.Current).As<UmbracoContext>().InstancePerRequest();
+        builder.Register(c => new UmbracoHelper(UmbracoContext.Current)).As<UmbracoHelper>().InstancePerRequest();
+
+        builder.RegisterInstance(appContext.Services.MediaService).As<IMediaService>();
+        builder.RegisterInstance(appContext.Services.ContentService).As<IContentService>();
+        builder.RegisterInstance(appContext.Services.UserService).As<IUserService>();
+        builder.RegisterInstance(appContext.Services.TextService).As<ILocalizedTextService>();  
 
         builder.RegisterAssemblyModules(applicationWebAssembly);
 
