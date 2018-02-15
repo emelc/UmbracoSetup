@@ -69,6 +69,8 @@ public class UmbracoStartup : IApplicationEventHandler
         
         builder.RegisterControllers(applicationWebAssembly);
 
+        builder.RegisterControllers(applicationWebAssembly);
+
         builder.RegisterApiControllers(typeof(UmbracoApplication).Assembly);
         builder.RegisterApiControllers(typeof(FormTreeController).Assembly);        
         builder.RegisterApiControllers(applicationWebAssembly).PropertiesAutowired();
