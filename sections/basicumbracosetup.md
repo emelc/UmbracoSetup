@@ -205,3 +205,11 @@ Change default language to be `English (United Kingdom)`.
 https://umbracoclient-local.jywng.co/umbraco/#/users
 Change administrator's Language to be `English (United Kingdom)`. 
 
+### 23. Running in a single Azure Web App
+
+You should ensure that fcnMode="Single" in your web.config's <httpRuntime>
+section (this is the default that is shipped with Umbraco, see here for more details)
+
+You should set your log4net minimum log priority to "WARN" in /Config/log4net.config if you are running a live site (of course if you are debugging this is irrelevant)
+
+The minimum recommended Azure SQL Tier is "S2", however noticeable performance improvements are seen in higher Tiers.

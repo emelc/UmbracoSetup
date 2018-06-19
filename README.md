@@ -33,6 +33,9 @@
 ### Plugins
 - [Cms Environment Indicator](sections/cmsenvironmentindicator.md)
 
+### Useful links
+- [Umbraco Documentation](https://our.umbraco.org/documentation/)
+- [Running Umbraco in Azure Web Apps #bestpractices](https://our.umbraco.org/documentation/Getting-Started/Setup/Server-Setup/azure-web-apps#best-practices)
 
 # License
 Licensed under the [MIT License](LICENSE.md)
