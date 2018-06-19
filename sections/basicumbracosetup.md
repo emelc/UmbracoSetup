@@ -85,6 +85,7 @@ public class UmbracoStartup : IApplicationEventHandler
         builder.RegisterInstance(appContext.Services.ContentService).As<IContentService>();
         builder.RegisterInstance(appContext.Services.UserService).As<IUserService>();
         builder.RegisterInstance(appContext.Services.TextService).As<ILocalizedTextService>();
+        builder.RegisterInstance(appContext.Services.ContentTypeService).As<IContentTypeService>();      
         builder.RegisterInstance(appContext.Services.SectionService).As<ISectionService>();          
     
         builder.RegisterAssemblyModules(applicationWebAssembly);
