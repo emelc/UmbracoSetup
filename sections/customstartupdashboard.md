@@ -20,7 +20,7 @@ Create a new view `~/Views/Partials/CMS/Welcome.cshtml`:
     <div class="umb-healthcheck-help-text faded">
         <p>Here are some useful resources:</p>
         <ul class="nav">
-            <li><a href="https://goo.gl/RGLHYi" target="_blank" class="welcome-action-link"><i class="icon-out"></i> <span>Umbraco Content Editor Manual</span></a></li>
+            <li><a href="https://our.umbraco.org/FileDownload?id=12288" target="_blank" class="welcome-action-link"><i class="icon-out"></i> <span>Umbraco Content Editor Manual</span></a></li>
             <li><a href="https://umbraco.tv" target="_blank" class="welcome-action-link"><i class="icon-out"></i> <span>Umbraco.TV</span></a></li>
         </ul>
     </div>
