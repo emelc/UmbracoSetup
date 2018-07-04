@@ -52,12 +52,11 @@ public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, Appl
 
     RouteTable.Routes.MapRoute(
         name: "CMS",
-        url: GlobalSettings.UmbracoMvcArea + "/backoffice/cms/{action}/{id}",                
+        url: GlobalSettings.UmbracoMvcArea + "/backoffice/cms/{action}",                
         defaults: new
         {
             controller = "CMS",
-            action = "Welcome",
-            id = UrlParameter.Optional
+            action = "Welcome"           
         });
   
 }
