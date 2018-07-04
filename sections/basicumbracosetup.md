@@ -134,7 +134,7 @@ For a local SQL database, you can setup using simple credentials, although upon 
 
 ### 14. Update SQL database user:
 - database (`UmbracoClient`), security, users, `UmbracoClient`, properties
-- within the 'owned schemas' page, select '**dbo_owner**'.
+- within the 'memberships' page, select '**dbo_owner**'.
 
 
 ### 15. Hosts file
