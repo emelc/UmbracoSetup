@@ -200,7 +200,11 @@ Step 5:
 
 ### 22. Change Language from English (United States): 
 https://umbracoclient-local.jywng.co/umbraco/#/settings
-Change default language to be `English (United Kingdom)`.
+
+Add new language `English (United Kingdom)`.
+Delete existing language for `English (United States)`.
+
+!Important. If you change the existing language, it doesnt change the database record properly, you need to add/remove. 
 
 https://umbracoclient-local.jywng.co/umbraco/#/users
 Change administrator's Language to be `English (United Kingdom)`. 
